@@ -44,7 +44,6 @@ header {
 header {
     display: flex;
     justify-content: space-between;
-    font-size: 50% ;
 }
 
 .header-left {
@@ -58,6 +57,7 @@ header {
     display: flex;
     flex-direction: column;
     font-size: larger;
+    justify-content: center;
 }
 
 .footer-right {

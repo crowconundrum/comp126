@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts */
+body, input, button {
+    font-family: "Patrick Hand SC", cursive;
+}
+
+/* Global Styles */
+html, body {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #E6C3C4;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #89b4bc;
+    padding: 10px 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+}
+
+.header-logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-collapse ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-collapse li {
+    margin-right: 20px;
+}
+
+.nav-collapse a {
+    text-decoration: none;
+    color: #365359;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #89b4bc;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Map and Search Form */
+.map-container,
+.search-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 75%; /* Aspect ratio of 4:3 for the map */
+}
+
+.map-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D18AA7; /* Dark pink box behind the map */
+    z-index: -1;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.search-form {
+    position: relative;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.search-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D18AA7; /* Dark pink box behind the search field */
+    border: radius 5px;;
+    z-index: -1;
+}
+
+.rectangle-container {
+    border: 1px solid #D18AA7; /* Thin pink border */
+    margin: 1px; /* Add margin to create space between the border and other elements */
+    padding: 5px; /* Adjust padding to control distance between border and rectangles */
+    border-radius: 5px; 
+
+/* Rectangle Boxes */
+.rectangle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.rectangle {
+    background-color: #fff;
+    width: 90%;
+    max-width: 300px;
+    height: 150px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+}
+
+.text {
+    flex: 1;
+    font-weight: bold;
+    padding: 20px;
+    text-align:center;
+}
+
+.distance {
+    background-color: #93B7BE; /* Light blue color */
+    padding: 5px 10px;
+    border-radius: 5px;
+    
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Rounded corners */
+
+}
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Add padding for space */
+}
+
+.image img {
+    width: calc(100% - 20px); /* Adjust width to consider padding */
+    height: calc(100% - 20px); /* Adjust height to consider padding */
+    object-fit: cover;
+    border-radius: 10px; /* Rounded corners */
+
+/* Media Query for Desktop */
+@media screen and (min-width: 768px) {
+    main{
+        display: flex;
+        flex-direction: row
+    }
+    .map-container,
+    .search-form {
+        width: 66.66%;
+    }
+
+    .rectangle-container {
+        width: 33.33%;
+        align-items: flex-start;
+    }
+}
+
+}
+}
