@@ -1,15 +1,8 @@
 footer{
     background-color: #89b4bc;
     display: sticky;
-    position: fixed;
     bottom: 0px;
     width: 100%;
-}
-
-@media (max-width: 768px) { 
-    footer {
-        position: sticky;
-    }
 }
 
 .contact-logo {
