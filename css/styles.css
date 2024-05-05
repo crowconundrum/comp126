@@ -86,7 +86,7 @@ h1{
 }
 
 .menu-item {
-    font-size: clamp(18px, 1vw, 30px);
+    font-size: clamp(0.75rem, 0.3750rem + 1.6667vw, 1.25rem);
 }
 
 .nav-collapse a {
