@@ -1,0 +1,49 @@
+footer{
+    background-color: #89b4bc;
+    display: sticky;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+@media (max-width: 768px) { 
+    footer {
+        position: sticky;
+    }
+}
+
+.contact-logo {
+    justify-content: center;
+    align-content: top;
+    width: 150px;
+    height: auto;
+    margin: auto;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1vw;
+}
+
+.contact {
+    text-align: center;
+    margin: auto;
+}
+
+p.contact {
+    font-size: 180%;
+    margin-bottom: 15px;
+}
+
+.menu-item {
+    font-size: clamp(18px, 1.5vw, 45px);
+}
+
+.contact-box h2 {
+    text-align: center;
+}
